@@ -1,0 +1,60 @@
+.userButton {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.userButton img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.userButton .arrowDown {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.loginButton {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 32px;
+}
+
+.loginButton:hover {
+  background-color: #f1f1f1;
+}
+
+.userOptions {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+}
+
+.userOption {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.userOption:hover {
+  background-color: #f1f1f1;
+  color: gray;
+}
+
+@media (max-width: 475px) {
+  .userButton {
+    display: none;
+  }
+}
