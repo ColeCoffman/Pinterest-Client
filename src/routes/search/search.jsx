@@ -1,7 +1,8 @@
+import Gallery from "../../components/gallery/gallery";
 import "./search.css";
 
 const Search = () => {
-  return <div className="search">Search</div>;
+  return <Gallery />;
 };
 
 export default Search;

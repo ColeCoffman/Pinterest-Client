@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "../image/image";
 import "./userButton.css";
 const UserButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,14 +8,14 @@ const UserButton = () => {
   const TEMP_USER = {
     name: "John Doe",
     email: "john.doe@example.com",
-    avatar: "/general/noAvatar.png",
+    avatar: "pinterest/general/noAvatar.png",
   };
 
   return currentUser ? (
     <div className="userButton">
-      <img src={TEMP_USER.avatar} alt="User" />
-      <img
-        src="/general/arrow.svg"
+      <Image path={TEMP_USER.avatar} alt="User" />
+      <Image
+        path="pinterest/general/arrow.svg"
         alt="Arrow Down"
         className="arrowDown"
         onClick={() => setIsOpen(!isOpen)}
